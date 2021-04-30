@@ -1,0 +1,22 @@
+#formulary{
+    padding: 25px 75px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+    width: 350px;
+    height: 250px;
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    top: 30%;
+}
+form{
+    /*background-color: black;
+    color: white;*/
+    position: relative;
+    width: inherit;
+    margin: 50px auto;
+}
+.form-1 {
+    width: 150px;
+    position: absolute;
+    right: 20%;
+}
