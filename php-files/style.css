@@ -22,4 +22,7 @@ form{
 }
 #formulary .btn {
     padding: 15px;
+    background-color: rgb(2, 125, 226);
+    color: #FFF;
+    margin: 5px auto;
 }
