@@ -15,8 +15,11 @@ form{
     width: inherit;
     margin: 50px auto;
 }
-.form-1 {
+.form-1{
     width: 150px;
     position: absolute;
     right: 20%;
+}
+#formulary .btn {
+    padding: 15px;
 }
