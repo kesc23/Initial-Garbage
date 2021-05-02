@@ -4,40 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="php-files/style.css">
 </head>
 <body>
     <?php
-        if (!isset($_POST['name'])){
+        if (!isset($_POST['name'])):
             $name = null;
-        }else{
+        else:
             $name = $_POST['name'];
-        }
-
-        if (!isset($_POST['city'])){
-            $city = null;
-        }else{
-            $city = $_POST['city'];
-        }
-
-        if (!isset($_POST['color'])){
-            $color = null;
-        }else{
-            $color = $_POST['color'];
-        }
-
-        function getName($name) {
-            return $name = $_POST['name'];
-        }
-        function getColor($color) {
-            return $color = $_POST['color'];
-        }
-        function getCity($city) {
-            return $city = $_POST['city'];
-        }
-
+        endif;
     ?>
-
     <div id="formulary">
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
         Name: <input type="text" name="name" class="form-1" value="<?php echo $name;?>"><br>
@@ -46,6 +22,9 @@
         <button class="btn" type="submit">Enviar</button>
         </form>
         <?php
+            $name = $_POST['name'];
+            $city = $_POST['city'];
+            $color = $_POST['color'];
             echo 'Hi, ' . $name . '! I seen your city is ' . $city . ' and your favorite color is ' . $color;
         ?>
     </div>
