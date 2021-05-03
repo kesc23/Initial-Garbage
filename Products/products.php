@@ -9,4 +9,10 @@ $Product1 = new Product();
 $Product1-> name = "Iphone 12";
 $Product1-> weight = 112;
 $Product1-> brand = "Apple";
+
+
+function productID($id){
+    echo '$product'."$id";
+}
+
 ?>
