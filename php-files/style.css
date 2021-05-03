@@ -14,6 +14,7 @@ form{
     position: relative;
     width: inherit;
     margin: 50px auto;
+    margin-bottom: 10px!important;
 }
 .form-1{
     width: 150px;
@@ -25,6 +26,7 @@ form{
     background-color: rgb(2, 125, 226);
     color: #FFF;
     margin: 5px auto;
+    margin-top: 20px;
     border-style: none;
     border-radius: 5px;
     min-width: -webkit-fill-available;

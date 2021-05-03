@@ -41,13 +41,19 @@
     <div id="formulary">
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
         Name: <input type="text" name="name" class="form-1" value="<?php echo $name;?>"><br>
-        City: <input type="text" name="city" class="form-1"><br>
-        Color: <input type="text" name="color" class="form-1"><br>
+        City: <input type="text" name="city" class="form-1" value="<?php echo $city;?>"><br>
+        Color: <input type="text" name="color" class="form-1" value="<?php echo $color;?>"><br>
         <button class="btn" type="submit">Enviar</button>
         </form>
-        <?php
-            echo 'Hi, ' . $name . '! I seen your city is ' . $city . ' and your favorite color is ' . $color;
-        ?>
+        <div>
+            <?php
+                if (!isset($color) && !isset($city) && !isset($name)) {
+                    echo '  ';
+                } else {
+                echo 'Hi, ' . $name . '! I seen your city is ' . $city . ' and your favorite color is ' . $color;
+                }
+            ?>
+        </div>
     </div>
     
 </body>
